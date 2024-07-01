@@ -29,12 +29,15 @@ class CommentArea extends Component {
       console.log(err);
     }
   };
+  componendtDidUpdate(prevProps) {
+    if (prevProps.asin != this.props.asin) {
+      this.fetcComments();
+    } else <Alert> Non hai selezionato niente </Alert>;
+  }
 
   componentDidMount() {
     this.fetcComments();
   }
-
-  commen;
 
   render() {
     return (

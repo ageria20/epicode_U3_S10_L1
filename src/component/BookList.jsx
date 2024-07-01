@@ -8,6 +8,7 @@ class BookList extends Component {
     searchQuery: "",
     asin: "",
   };
+
   changeAsin = newAsin => {
     this.setState({ asin: newAsin });
   };
